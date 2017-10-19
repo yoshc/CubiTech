@@ -1,0 +1,350 @@
+name: CubiTech
+main: de.typiex.cubitech.CubiTech
+version: 1.0
+author: typiex
+depends: [Votifier]
+
+commands:
+   tp:
+      description: Teleportiere einen Spieler zu einem Anderen.
+      usage: /<command> [player] <target>
+   tphere:
+      description: Teleportiere einen Spieler zu dir.
+      usage: /<command> <player>
+      permission: cubitech.tphere
+      permission-message: '§cDu hast leider keine Rechte dafuer!'
+      aliases: s
+   tpc:
+      description: Teleportiere einen Spieler zu Koordinaten.
+      usage: /<command> [player] <x> <y> <z>
+      permission: cubitech.tpc
+      permission-message: '§cDu hast leider keine Rechte dafuer!'
+   msg:
+      description: Fluestere zu einem Spieler.
+      usage: /<command> <player> <message>
+      aliases: m
+   kick:
+      description: Kicke einen Spieler.
+      usage: /<command> <player> [reason]
+   kickall:
+      description: Kicke alle Spieler.
+      usage: /<command> [reason]
+      permission: cubitech.kickall
+      permission-message: '§cDu hast leider keine Rechte dafuer!'
+   spawn:
+      description: Teleportiere Dich zum Spawn.
+      usage: /<command>
+   setspawn:
+      description: Setze den Spawn.
+      usage: /<command>
+      permission: cubitech.setspawn
+      permission-message: '§cDu hast leider keine Rechte dafuer!'
+   firstspawn:
+      description: Teleportiere Dich zum FirstSpawn.
+      usage: /<command>
+   setfirstspawn:
+      description: Setze den FirstSpawn.
+      usage: /<command>
+      permission: cubitech.setfirstspawn
+      permission-message: '§cDu hast leider keine Rechte dafuer!'
+   getclass:
+      description: Zeigt die aktuelle Klasse eines Spielers an.
+      usage: /<command> [player]
+      permission: cubitech.getclass
+      permission-message: '§cDu hast leider keine Rechte dafuer!'
+   setclass:
+      description: Setze einen Spieler in eine Klasse.
+      usage: /<command> <player> <class>
+      permission: cubitech.setclass
+      permission-message: '§cDu hast leider keine Rechte dafuer!'
+   setlevel:
+      description: Setze einen Spieler in ein Level.
+      usage: /<command> <player> <level>
+      permission: cubitech.setlevel
+      permission-message: '§cDu hast leider keine Rechte dafuer!'
+   heal:
+      description: Heile einen Spieler.
+      usage: /<command> [player]
+      permission: cubitech.heal
+      permission-message: '§cDu hast leider keine Rechte dafuer!'
+   god:
+      description:
+      usage: /<command> [player]
+      permission: cubitech.god
+      permission-message: '§cDu hast leider keine Rechte dafuer!'
+   kill:
+      description: Toete einen Spieler.
+      usage: /<command> <player>
+      permission: cubitech.kill
+      permission-message: '§cDu hast leider keine Rechte dafuer!'
+   class:
+      description: Waehle eine Klasse.
+      usage: /<command> [player]
+      aliases: klasse
+   creload:
+      description: Reloade den Server.
+      usage: /<command>
+      permission: cubitech.creload
+      permission-message: '§cDu hast leider keine Rechte dafuer!'
+      aliases: crl
+   adminkit:
+      description: Rueste dich mit Admin Sachen aus.
+      usage: /<command>
+      permission: cubitech.adminkit
+      permission-message: '§cDu hast leider keine Rechte dafuer!'
+   gamemode:
+      description: Aendere deinen Gamemode.
+      usage: /<command> [c/s/a] [player]
+      aliases: gm
+   setep:
+      description: Setze die EP eines Spielers.
+      usage: /<command> <player> <value>
+      permission: cubitech.setep
+      permission-message: '§cDu hast leider keine Rechte dafuer!'
+   sethead:
+      description: Setze den Kopf eines Spielers.
+      usage: /<command> [player]
+      permission: cubitech.sethead
+      permission-message: '§cDu hast leider keine Rechte dafuer!'
+   setitemname:
+      description: Setze den Namen eines Items.
+      usage: /<command> <name>
+      permission: cubitech.setitemname
+      permission-message: '§cDu hast leider keine Rechte dafuer!'
+      aliases: setin
+   setitemdesc:
+      description: Setze die Beschreibung eines Items.
+      usage: /<command> <desc>
+      permission: cubitech.setitemdesc
+      permission-message: '§cDu hast leider keine Rechte dafuer!'
+      aliases: setid
+   money:
+      description: Siehe nach, wieviel Geld Du hast.
+      usage: /<command> [player]
+      aliases: geld
+   ep:
+      description: Siehe nach, wieviel EP Du hast.
+      usage: /<command> [player]
+   setmoney:
+      description: Setze das Geld eines Spielers.
+      usage: /<command> <player> <value>
+      permission: cubitech.setmoney
+      permission-message: '§cDu hast leider keine Rechte dafuer!'
+   pvp:
+      description: Setze deinen PvP Status.
+      usage: /<command> [player]
+   gruppe:
+      description: Zeige an, in welcher Gruppe Du dich befindest.
+      usage: /<command>
+      aliases: g
+   cubisay:
+      description: Schreibe eine Meldung an alle Spieler.
+      usage: /<command> <message>
+      permission: cubitech.cubisay
+      permission-message: '§cDu hast leider keine Rechte dafuer!'
+      aliases: csay
+   broadcast:
+      description: Schreibe eine Meldung an alle Spieler.
+      usage: /<command> <message>
+      permission: cubitech.broadcast
+      permission-message: '§cDu hast leider keine Rechte dafuer!'
+      aliases: bc
+   mount:
+      description: Rufe ein Reittier herbei.
+      usage: /<command>
+      aliases: reittier
+   dragon:
+      description: Rufe einen Drachen herbei.
+      usage: /<command>
+      permission: cubitech.dragon
+      permission-message: '§cDu hast leider keine Rechte dafuer!'
+      aliases: drg
+   ram:
+      description: Siehe den Status des RAMs.
+      usage: /<command>
+      permission: cubitech.ram
+      permission-message: '§cDu hast leider keine Rechte dafuer!'
+      aliases: mem
+   killall:
+      description: Toete alle Mobs des Servers.
+      usage: /<command>
+      permission: cubitech.killall
+      permission-message: '§cDu hast leider keine Rechte dafuer!'
+      aliases: killmobs
+   dropparty:
+      description: Veranstalte eine Drop-Party.
+      usage: /<command>
+      permission: cubitech.dropparty
+      permission-message: '§cDu hast leider keine Rechte dafuer!'
+      aliases: dp
+   coupon:
+      description: Erhalte einen Coupon fuer Cubi.
+      usage: /<command>
+      permission: cubitech.coupon
+      permission-message: '§cDu hast leider keine Rechte dafuer!'
+      aliases: gutschein
+   paket:
+      description: Sende ein Packet an einen Spieler
+      usage: /<command> <player>
+      aliases: packet
+   levels:
+      description: Zeige alle Belohnungen
+      usage: /<command>
+      aliases: lvls
+   1vs1:
+      description: Zeige Infos zu 1vs1.
+      usage: /<command>
+      aliases: arena
+   texturepack:
+      description: Aendere dein Texturepack.
+      usage: /<command> <URL>
+   setskull:
+      description: Setze das Aussehens eines Skulls
+      usage: /<command> <Player>
+      permission: cubitech.setskull
+      permission-message: '§cDu hast leider keine Rechte dafuer!'
+   verkaufen:
+      description: Verkaufe das Item in deiner Hand
+      usage: /<command> <Price>
+      aliases: vk
+   kaufen:
+      description: Kaufe ein Item eines Spielers
+      usage: /<command> <Player>
+      aliases: k
+   list:
+      description: Siehe, wer online ist.
+      usage: /<command>
+      aliases: l
+   partybow:
+      description: Erhalte den Party Bogen.
+      usage: /<command>
+      aliases: pb
+      permission: cubitech.partybow
+      permission-message: '§cDu hast leider keine Rechte dafuer!'
+   freebuild:
+      description: Gehe zur Freebuild Welt.
+      usage: /<command>
+   quest:
+      description: Siehe die Quests nach.
+      usage: /<command>
+      aliases: q
+   repair:
+      description: Repariere ein Item.
+      usage: /<command>
+      aliases: reparieren
+      permission: cubitech.repair
+      permission-message: '§cDu hast leider keine Rechte dafuer!'
+   enderchest:
+      description: Oeffne deine EnderChest.
+      usage: /<command>
+      aliases: ec
+   fly:
+      description: Fliege.
+      usage: /<command>
+      aliases: fliegen
+   position:
+      description: Siehe deine Position ein.
+      usage: /<command>
+      aliases: pos
+   tpa:
+      description: Mache eine Teleportationsanfrage.
+      usage: /<command> <player>
+   tpahere:
+      description: Mache eine Teleportationsanfrage.
+      usage: /<command> <player>
+   tpaccept:
+      description: Nimm eine Teleportationsanfrage an.
+      usage: /<command>
+   back:
+      description: Teleportiere Dich zu deinen letzten Todespunkt.
+      usage: /<command>
+      aliases: zurueck
+   hilfe:
+      description: Siehe die Hilfe ein.
+      usage: /<command>
+      aliases: h
+   addpermission:
+      description: Fuege einem Spieler temporaer Rechte hinzu.
+      usage: /<command> <player> <permission>
+      permission: cubitech.addpermission
+      permission-message: '§cDu hast leider keine Rechte dafuer!'
+   removepermission:
+      description: Nimm einem Spieler temporaer Rechte ab.
+      usage: /<command> <player> <permission>
+      permission: cubitech.removepermission
+      permission-message: '§cDu hast leider keine Rechte dafuer!'
+   setfaction:
+      description: Setze die Fraktion eines Spielers.
+      usage: /<command> <player> <faction>
+      permission: cubitech.setfaction
+      permission-message: '§cDu hast leider keine Rechte dafuer!'
+   faction:
+      description: Waehle eine Fraktion.
+      usage: /<command>
+      aliases: volk
+   shop:
+      description: Kaufe Items aus dem Shop.
+      usage: /<command>
+      aliases: buy
+   kopfgeld:
+      description: Setze Kopfgeld auf einen Spieler aus.
+      usage: /<command> <Spieler> <Preis>
+      aliases: kg
+   code:
+      description: Loese einen Code ein.
+      usage: /<command> <Code>
+   ask:
+      description: Stelle eine Frage an alle online Admins.
+      usage: /<command> <Frage>
+      aliases: frage
+   tutorial:
+      description: Starte das Tutorial.
+      usage: /<command>
+      aliases: tut
+   warn:
+      description: Warne einen Spieler.
+      usage: /<command> <Spieler> [Grund]
+      aliases: warnen
+   afk:
+      description: Stelle deinen Status auf AFK.
+      usage: /<command> [Grund]
+      aliases: away
+   crash:
+      description: Lasse einen Spieler crashen.
+      usage: /<command> <Spieler>
+      permission: cubitech.crash
+      permission-message: '§cDu hast leider keine Rechte dafuer!'
+   witherbow:
+      description: Erhalte den Wither Bogen.
+      usage: /<command>
+      aliases: wb
+      permission: cubitech.witherbow
+      permission-message: '§cDu hast leider keine Rechte dafuer!'
+   vorraete:
+      description: Siehe deine Vorraete ein.
+      usage: /<command>
+      aliases: vorrat
+   versteigern:
+      description: Versteigere das Item in deiner Hand.
+      usage: /<command> <Startpreis>
+      aliases: vs
+   bieten:
+      description: Biete fuer einen versteigerten Gegenstand.
+      usage: /<command> <Preis>
+      aliases: bid
+   setspawner:
+      description: Setze den Monster-Typ eines Spawners.
+      usage: /<command> <Type>
+      permission: cubitech.setspawner
+      permission-message: '§cDu hast leider keine Rechte dafuer!'
+   bank:
+      description: Oeffne deine Bank.
+      usage: /<command>
+   vote:
+      description: Vote und erhalte eine Belohnung.
+      usage: /<command>
+   fakeslots:
+      description: Fake Slots.
+      usage: /<command> <Slots>
+      permission: cubitech.fakeslots
+      permission-message: '§cDu hast leider keine Rechte dafuer!'
