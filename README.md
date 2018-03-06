@@ -23,7 +23,7 @@ Note:
 - the plugin is mostly german and there's no translation feature being used.
 - see plugin.yml for the used commands
 
-!!
+**!!
 This code is NOT written in a good style! I wrote it when i was very young, and did not follow any style guidelines.
 I know the coding style is horrible and many things can be structured and implemented MUCH better.
-!!
+!!**
