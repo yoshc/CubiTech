@@ -24,6 +24,6 @@ Note:
 - see plugin.yml for the used commands
 
 **!!
-This code is NOT written in a good style! I wrote it when i was very young, and did not follow any style guidelines.
+This code is NOT written in a good style! I wrote it when i was very young (like 12 or 13), and did not follow any style guidelines.
 I know the coding style is horrible and many things can be structured and implemented MUCH better.
 !!**
