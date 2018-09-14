@@ -1,6 +1,11 @@
 # CubiTech
 Old MMORPG Bukkit Server Plugin
 
+**!!
+This code is NOT written in a good style! I wrote it when i was very young (12 or 13), and did not follow any style guidelines.
+I know the coding style is horrible and many things can be structured and implemented MUCH better.
+!!**
+
 This is the source code of the main plugin of the obsolete Minecraft Server "CubiTech" (coded many years ago..)
 
 I just wanted to share it.
@@ -22,8 +27,3 @@ Note:
   -> If you have it, please contact me!
 - the plugin is mostly german and there's no translation feature being used.
 - see plugin.yml for the used commands
-
-**!!
-This code is NOT written in a good style! I wrote it when i was very young (like 12 or 13), and did not follow any style guidelines.
-I know the coding style is horrible and many things can be structured and implemented MUCH better.
-!!**
