@@ -2,7 +2,7 @@
 Old MMORPG Bukkit Server Plugin
 
 **!!
-This code is NOT written in a good style! I wrote it when i was very young (12 or 13), and did not follow any style guidelines.
+This code is NOT written in a good style! I wrote it when i was very young (around 13), and did not follow any style guidelines.
 I know the coding style is horrible and many things can be structured and implemented MUCH better.
 !!**
 
